@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark Manager</title>
+</head>
+<body>
+    <h1 class="text-capitalize text-center p-4 m-2 w-50 mx-auto">book marker</h1>
+    <div class="text-center p-5 m-3">
+        <i class="fa-regular fa-bookmark"></i>
+        <h3 class="d-inline m-4">save your fav websites</h3>
+        <i class="fa-regular fa-bookmark"></i>
+    </div>
+    <div class="w-75 inputs mx-auto text-capitalize fs-5 m-3">
+        <label for="siteName"><i class="m-2 fa-solid fa-book-bookmark"></i> name </label>
+        <input type="text" id="siteName" class="m-2 form-control" placeholder="site name">
+        <label for="url"><i class="m-2 fa-solid fa-link"></i>site url</label>
+        <input type="text" id="url" class="m-2 form-control" placeholder="site url">
+        <button class="btn px-5 mx-auto btn-success text-center m-3" onclick="addBookmark()">save</button>
+        <div id="message" class="mt-3"></div>
+    </div>
+    <table class="table table-hover table-striped mt-3 w-75 mx-auto text-capitalize text-center">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>delete</th>
+                <th>visit</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(18, 64, 118);
+    font-family: "Poetsen One", sans-serif;
+    color: rgb(249, 232, 151);
+}
+
+h1{
+    font-size: 52px;
+    border-bottom: 2px dashed rgb(249, 232, 151);
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 100;
+}
+
+i{
+    font-size: 25px;
+}
